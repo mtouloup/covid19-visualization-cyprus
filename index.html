@@ -83,24 +83,24 @@
                                         <div class="row g-gs">
                                             <div class="col-sm-4 col-6">
                                                 <div class="status-item">
-                                                    <h6 class="title">Worldwide Cases</h6>
-                                                    <div class="h3 count">245,850</div>
+                                                    <h6 class="title">Cyprus Confirmed</h6>
+                                                    <div class="h3 count" id="confirmed_cases_overview"></div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4 col-6">
                                                 <div class="status-item">
-                                                    <h6 class="title">Deaths</h6>
-                                                    <div class="h3 count">10,047</div>
+                                                    <h6 class="title">Cyprus Deaths</h6>
+                                                    <div class="h3 count" id="death_cases_overview"></div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4 col-6">
                                                 <div class="status-item">
-                                                    <h6 class="title">Recovered</h6>
-                                                    <div class="h3 count">88,441</div>
+                                                    <h6 class="title">Cyprus Recovered</h6>
+                                                    <div class="h3 count" id="recovered_cases_overview"></div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="status-note">*  Last updated: March 20, 2020, 05:04 GMT</div>
+                                        <div class="status-note">*  Last updated: Live (based on JHU CCSE dataset)</div>
                                     </div><!-- .status -->
                                 </div><!-- .content -->
                             </div><!-- .nk-banner-block -->
@@ -153,7 +153,9 @@
                             <div class="col-lg-5 col-xl-4">
                                 <div class="text-block">
                                     <h5 class="subtitle">CONFIRMED CASES OVER TIME</h5>
-                                    <p class="lead"><strong>Lorem </strong> Ipsum </p>
+                                    <p></p>
+                                    <p class="lead" id="first_conf_date"><strong>First Infection: </strong></p>
+                                    <p class="lead" id="total_confirmed"><strong>Total Confirmed Cases: </strong></p>
                                 </div><!-- .text-block -->
                             </div><!-- .col -->
                         </div><!-- .row -->
