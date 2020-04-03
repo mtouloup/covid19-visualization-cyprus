@@ -106,7 +106,13 @@ var today_deaths = {
 
         data.push(total_deaths_today_key_value);
 
-        $("#today_date").append(total_deaths_yesterday_key_name);
+        var date = new Date(total_deaths_today_key_name);
+        let formatted_date = date.getDate() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear();
+
+        $("#today_date").append(formatted_date);
+        $(".status-note").append(formatted_date);
+        
+
 
       });
 
