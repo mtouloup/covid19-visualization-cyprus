@@ -5,7 +5,7 @@ am4core.useTheme(am4themes_animated);
 // Themes end
 
 // Create chart instance
-var chart = am4core.create("chartdiv", am4charts.XYChart);
+var chart = am4core.create("chartdiv_death_cases", am4charts.XYChart);
 var obj_data = {};
 var cyprus_obj = {};
 var data = [];
@@ -13,7 +13,7 @@ var data = [];
 var settings = {
            "async": true,
            "crossDomain": true,
-           "url": "https://data.humdata.org/hxlproxy/api/data-preview.csv?url=https%3A%2F%2Fraw.githubusercontent.com%2FCSSEGISandData%2FCOVID-19%2Fmaster%2Fcsse_covid_19_data%2Fcsse_covid_19_time_series%2Ftime_series_covid19_confirmed_global.csv&filename=time_series_covid19_confirmed_global.csv",
+           "url": "https://data.humdata.org/hxlproxy/api/data-preview.csv?url=https%3A%2F%2Fraw.githubusercontent.com%2FCSSEGISandData%2FCOVID-19%2Fmaster%2Fcsse_covid_19_data%2Fcsse_covid_19_time_series%2Ftime_series_covid19_deaths_global.csv&filename=time_series_covid19_deaths_global.csv",
            "method": "GET"
          }
 
@@ -41,7 +41,7 @@ var settings = {
 							
 			});
 		
-// Add data
+
 
 
 // Set input format for the dates
