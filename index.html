@@ -28,7 +28,7 @@
                 <div class="container-fluid">
                     <div class="nk-navbar-wrap">
                         <div class="nk-navbar-logo logo">
-                            <a href="./" class="logo-link">
+                            <a class="logo-link">
                                 <img class="logo-dark" src="images/logo-dark.png" srcset="images/logo-dark2x.png 2x" alt="logo">
                                 <img class="logo-light" src="images/logo-white.png" srcset="images/logo-white2x.png 2x" alt="logo">
                             </a>
@@ -164,8 +164,8 @@
                         <div class="row g-gs justify-content-between">
                             <div class="col-lg-5 col-xl-4">
                                 <div class="text-block">
-                                    <h5 class="subtitle">RECOVERED CASES OVER TIME</h5>
-                                    <p class="lead"><strong>Lorem </strong> Ipsum </p>
+                                    <h5 id="first_recovered_date" class="subtitle">RECOVERED CASES OVER TIME</h5>
+                                    <p id="total_recovered_date" class="lead"><strong>Total </strong> Recovered </p>
                                 </div><!-- .text-block -->
                             </div><!-- .col -->
                             <div class="col-lg-7">
@@ -180,8 +180,8 @@
                             </div><!-- .col -->
                             <div class="col-lg-5 col-xl-4">
                                 <div class="text-block">
-                                    <h5 class="subtitle">DEATH CASES OVER TIME</h5>
-                                    <p class="lead"><strong>Lorem </strong> Ipsum </p>
+                                    <h5 id="first_death_date" class="subtitle">DEATH CASES OVER TIME</h5>
+                                    <p id="total_death_date" class="lead"><strong>Lorem </strong> Ipsum </p>
                                 </div><!-- .text-block -->
                             </div><!-- .col -->
                         </div><!-- .row -->
@@ -970,21 +970,20 @@
                             <div class="col-lg-6 col-md-9 mr-auto">
                                 <div class="wgs wgs-about">
                                     <div class="wgs-logo logo">
-                                        <a href="./" class="logo-link">
+                                        <a class="logo-link">
                                             <img src="images/logo-white.png" srcset="images/logo-white2x.png 2x" alt="logo">
                                         </a>
                                     </div>
                                     <div class="wgs-about-text">
                                         <p> This website will try to bring awareness to the people especially on what the virus is, how to prevent the spread etc. The website is also using public data provided by the Johns Hopkins University Center for Systems Science and Engineering (JHU CCSE), in order to visualize the COVID-19 outbreak in Cyprus. </p>
                                         <p>Learn about the Cyprus government response to coronavirus at <a href="https://www.pio.gov.cy/coronavirus/">https://www.pio.gov.cy/coronavirus</a></p>
-                                    </div>
-                                    <!--
+										<p>© 2020 COVID-19 Cyprus Visualization. Template Edited by <strong> Marios Touloupos, Evgenia Kapassa </strong></p>
+									</div>
                                     <ul class="wgs-social">
-                                        <li><a href="#"><em class="icon ni ni-facebook-f"></em></a></li>
-                                        <li><a href="#"><em class="icon ni ni-twitter"></em></a></li>
-                                        <li><a href="#"><em class="icon ni ni-youtube-fill"></em></a></li>
+                                        <li><a href="https://www.linkedin.com/in/marios-touloupos-967a69110/" target="_blank"><em class="icon ni ni-linkedin"></em></a></li> 
+										<li><a href="https://www.linkedin.com/in/evgenia-kapassa-abb720107/" target="_blank"><em class="icon ni ni-linkedin"></em></a></li> 										
                                     </ul>
-                                    -->
+                                    
                                 </div><!-- .wgs -->
                             </div><!-- .col -->
                             <div class="col-sm-3 col-lg-3">
@@ -1000,6 +999,7 @@
                                 </div><!-- .wgs -->
                             </div><!-- .col -->
                             <div class="col-sm-3 col-lg-2">
+							<!-- 
                                 <div class="wgs wgs-menu">
                                     <h6 class="wgs-title">Important Links</h6>
                                     <ul class="wgs-links">
@@ -1008,7 +1008,8 @@
                                         <li><a href="#">NHS Website</a></li>
                                         <li><a href="#">Harvard Health</a></li>
                                     </ul>
-                                </div><!-- .wgs -->
+                                </div>
+							-->
                             </div><!-- .col -->
                         </div><!-- .row -->
                     </div><!-- .nk-footer-top -->
@@ -1019,7 +1020,7 @@
                             </div><!-- .col -->
                             <div class="col-md-6">
                                 <ul class="nk-footer-links justify-content-md-end">
-                                    <li><a href="#">Privacy Policy</a></li>
+                                   <!--  <li><a href="#">Privacy Policy</a></li> -->
                                 </ul>
                             </div><!-- .col -->
                         </div><!-- .row -->

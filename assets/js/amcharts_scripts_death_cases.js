@@ -38,12 +38,29 @@ var settings = {
 					data.push({date:chart_data_key, value: chart_data_value});
 				}
 				chart.data = data;
-							
+						
+				// overview info
+				for (var f=4; f<cy_obj_keys.length; f++) {
+				  var prop_date_key = cy_obj_keys[f];
+				  var prop_date_value = cyprus_obj[prop_date_key];
+
+				  if (prop_date_value>0) {
+					var first_conf_case_date = prop_date_key;
+					break;
+				  }
+				  
+				}
+				$("#first_death_date").append(first_conf_case_date);
+		
+				var cy_obj_keys_length = cy_obj_keys.length;			
+				var total_death_key_name = cy_obj_keys[cy_obj_keys_length - 1];				
+				var total_death_key_value = cyprus_obj[total_death_key_name];
+				
+				$("#total_death_date").append(total_death_key_value);
+				
+				$("#death_cases_overview").append(total_death_key_value);			
 			});
 		
-
-
-
 // Set input format for the dates
 chart.dateFormatter.inputDateFormat = "yyyy-MM-dd";
 
