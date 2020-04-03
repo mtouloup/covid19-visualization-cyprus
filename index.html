@@ -39,7 +39,7 @@
                         <nav class="nk-navbar-menu" id="navbar-menu">
                             <ul class="nk-menu">
                                 <li class="nk-menu-item"><a class="scrollto nav-link nk-menu-link" href="#home">Home</a></li>
-                                <li class="nk-menu-item"><a class="scrollto nav-link nk-menu-link" href="#cyprus-guide">Cyprus Visual Guide</a></li>
+                                <li class="nk-menu-item"><a class="scrollto nav-link nk-menu-link" href="#cyprus-data">Cyprus Data</a></li>
                                 <li class="nk-menu-item"><a class="scrollto nav-link nk-menu-link" href="#about">About Covid-19</a></li>
                                 <li class="nk-menu-item"><a class="scrollto nav-link nk-menu-link" href="#symptoms">Symptoms</a></li>
                                 <li class="nk-menu-item"><a class="scrollto nav-link nk-menu-link" href="#prevention">Prevention</a></li>
@@ -112,7 +112,7 @@
 
         <main class="nk-pages">
 
-            <section class="section section-l bg-light section-spread" id="cyprus-guide">
+            <section class="section section-l bg-light section-spread" id="cyprus-data">
                 <div class="container">
                     <div class="section-head text-center wide-md">
                         <h5 class="subtitle">Cyprus Live Updates</h5>
@@ -123,27 +123,31 @@
 
                         <!-- daily cases -->
                         <div class="row g-gs justify-content-between">
-                            <div class="col-lg-12">
-                                <table class="table table-hover">
+                            <div class="col-lg-2"></div>
+                            <div class="col-lg-8">
+                                <table class="table table-bordered cases_table">
                                     <thead>
+                                        <th colspan="4" id="today_date" style="color: #f86168; text-align:center" data-toggle="tooltip" title="mm/dd/yyyy" ></th>
                                         <tr>
                                             <th>New Confirmed</th>
                                             <th>New Recoveries</th>
                                             <th>New Deaths</th>
-                                             <th>Active Cases</th>
+                                            <th>Active Cases</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <th id="new_confirmed"></th>
-                                            <th id="new_recoveries"></th>
-                                            <th id="new_deaths"></th>
-                                             <th id="active_cases"></th>
+                                            <td id="new_confirmed"></td>
+                                            <td id="new_recoveries"></td>
+                                            <td id="new_deaths"></td>
+                                            <td id="active_cases"></td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div><!-- .col -->
+                            <div class="col-lg-2"></div>
                         </div><!-- .row -->
+                        <br> <br><br>
 
                         <!-- confirmed cases timeseries -->
                         <div class="row g-gs justify-content-between">
