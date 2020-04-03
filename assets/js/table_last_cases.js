@@ -106,6 +106,8 @@ var today_deaths = {
 
         data.push(total_deaths_today_key_value);
 
+        $("#today_date").append(total_deaths_yesterday_key_name);
+
       });
 
       // active cases
