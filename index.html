@@ -148,7 +148,7 @@
                         <!-- confirmed cases timeseries -->
                         <div class="row g-gs justify-content-between">
                             <div class="col-lg-7">
-                                <div style="width: 100%; height: 500px;" id="chartdiv"></div>
+                                <div style="width: 100%; height: 500px;" id="chartdiv_active_cases"></div>
                             </div><!-- .col -->
                             <div class="col-lg-5 col-xl-4">
                                 <div class="text-block">
@@ -166,15 +166,15 @@
                                     <p class="lead"><strong>Lorem </strong> Ipsum </p>
                                 </div><!-- .text-block -->
                             </div><!-- .col -->
-                             <div class="col-lg-7">
-                                
+                            <div class="col-lg-7">
+								<div style="width: 100%; height: 500px;" id="chartdiv_recovered_cases"></div>
                             </div><!-- .col -->
                         </div><!-- .row -->
 
                         <!-- death cases timeseries -->
                         <div class="row g-gs justify-content-between">
                             <div class="col-lg-7">
-
+								<div style="width: 100%; height: 500px;" id="chartdiv_death_cases"></div>
                             </div><!-- .col -->
                             <div class="col-lg-5 col-xl-4">
                                 <div class="text-block">
@@ -973,8 +973,8 @@
                                         </a>
                                     </div>
                                     <div class="wgs-about-text">
-                                        <p> This website will try to bring awareness to the people especially on what the virus is, how to prevent the spread etc. The website also use public data provided by the Johns Hopkins University Center for Systems Science and Engineering (JHU CCSE), in order to visualize the COVID-19 outbreak in Cyprus. </p>
-                                        <p>Learn about the cypriot government response to coronavirus on <a href="https://www.pio.gov.cy/coronavirus/">https://www.pio.gov.cy/coronavirus</a></p>
+                                        <p> This website will try to bring awareness to the people especially on what the virus is, how to prevent the spread etc. The website is also using public data provided by the Johns Hopkins University Center for Systems Science and Engineering (JHU CCSE), in order to visualize the COVID-19 outbreak in Cyprus. </p>
+                                        <p>Learn about the Cyprus government response to coronavirus at <a href="https://www.pio.gov.cy/coronavirus/">https://www.pio.gov.cy/coronavirus</a></p>
                                     </div>
                                     <!--
                                     <ul class="wgs-social">
@@ -1040,5 +1040,7 @@
 	<script src="assets/js/bundle.js?ver=100"></script>
 	<script src="assets/js/scripts.js?ver=100"></script>
 	<script src="assets/js/amcharts_scripts_active_cases.js"></script>
+	<script src="assets/js/amcharts_scripts_recover_cases.js"></script>
+	<script src="assets/js/amcharts_scripts_death_cases.js"></script>
 </body>
 </html>

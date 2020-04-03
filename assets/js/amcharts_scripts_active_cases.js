@@ -5,7 +5,7 @@ am4core.useTheme(am4themes_animated);
 // Themes end
 
 // Create chart instance
-var chart = am4core.create("chartdiv", am4charts.XYChart);
+var chart = am4core.create("chartdiv_active_cases", am4charts.XYChart);
 var obj_data = {};
 var cyprus_obj = {};
 var data = [];
