@@ -38,13 +38,13 @@
                         </div><!-- .nk-navbar-toggle -->
                         <nav class="nk-navbar-menu" id="navbar-menu">
                             <ul class="nk-menu">
-                                <li class="nk-menu-item"><a class="scrollto nav-link nk-menu-link" href="#home">Home</a></li>
-                                <li class="nk-menu-item"><a class="scrollto nav-link nk-menu-link" href="#cyprus-data">Cyprus Data</a></li>
+                                <li class="nk-menu-item"><a class="scrollto nav-link nk-menu-link" href="#index.html">Home</a></li>
+                                <li class="nk-menu-item"><a class="scrollto nav-link nk-menu-link" href="index.html">Cyprus Data</a></li>
                                 <li class="nk-menu-item"><a class="scrollto nav-link nk-menu-link" href="about.html">About Covid-19</a></li>
                                 <li class="nk-menu-item"><a class="scrollto nav-link nk-menu-link" href="symptoms.html">Symptoms</a></li>
                                 <li class="nk-menu-item"><a class="scrollto nav-link nk-menu-link" href="prevention.html">Prevention</a></li>
                                 <li class="nk-menu-item"><a class="scrollto nav-link nk-menu-link" href="treatment.html">Treatment</a></li>
-                                <li class="nk-menu-item"><a class="scrollto nav-link nk-menu-link" href="#faq">FAQ</a></li>
+                                <li class="nk-menu-item"><a class="scrollto nav-link nk-menu-link" href="index.html#faq">FAQ</a></li>
                             </ul>
                             <ul class="nk-menu-btns">
                                 <li class="nk-menu-item"><a href="index.html#protect" class="btn btn-sm scrollto nav-link">Do &amp; Don’t</a></li>
@@ -53,221 +53,128 @@
                     </div><!-- .nk-navbar-wrap -->
                 </div><!-- .container -->
             </div><!-- .nk-navbar -->
-            <div class="nk-banner">
-                <div class="container">
-                    <div class="row g-gs align-items-center justify-content-between">
-                        <div class="col-lg-5 order-lg-last">
-                            <div class="nk-banner-image">
-                                <img src="images/gfx/header-a.png" alt="">
-                            </div>
-                        </div><!-- .col -->
-                        <div class="col-lg-6">
-                            <div class="nk-banner-block">
-                                <div class="content">
-                                    <h1 class="heading">
-                                        <span>CORONA</span>
-                                        <span class="heading-sm">
-                                            <span class="sup">COVID-19</span>
-                                            <span class="sub">VIRUS</span>
-                                        </span>
-                                    </h1>
-                                    <p align="justify">The Coronavirus (COVID-19) was first reported in Wuhan, Hubei, 
-                                        China in December 2019,  the outbreak was later recognized as a 
-                                        pandemic by the World Health Organization (WHO) on 11 March 2020.</p>
-    
-                                    <ul class="nk-banner-btns">
-                                        <li><a href="#protect" class="btn scrollto"><span>How to Protect</span><em class="icon ni ni-shield-half"></em></a></li>
-                                        <li><a href="#about" class="btn btn-transparent scrollto"><span>About COVID-19</span><em class="icon ni ni-arrow-right"></em></a></li>
-                                    </ul>
-                                    <div class="status">
-                                        <div class="row g-gs">
-                                            <div class="col-sm-4 col-6">
-                                                <div class="status-item">
-                                                    <h6 class="title">Cyprus Confirmed</h6>
-                                                    <div class="h3 count" id="confirmed_cases_overview"></div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4 col-6">
-                                                <div class="status-item">
-                                                    <h6 class="title">Cyprus Deaths</h6>
-                                                    <div class="h3 count" id="death_cases_overview"></div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4 col-6">
-                                                <div class="status-item">
-                                                    <h6 class="title">Cyprus Recovered</h6>
-                                                    <div class="h3 count" id="recovered_cases_overview"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="status-note">*  Last updated (based on JHU CCSE dataset) : </div>
-                                    </div><!-- .status -->
-                                </div><!-- .content -->
-                            </div><!-- .nk-banner-block -->
-                        </div><!-- .col -->
-                    </div><!-- .row -->
-                </div><!-- .container -->
+
+            <div class="nk-banner" style="min-height: 0px;">
             </div><!-- .nk-banner -->
         </header><!-- .nk-header -->
 
         <main class="nk-pages">
 
-            <section class="section section-l bg-light section-spread" id="cyprus-data">
+            <section class="section section-l bg-white section-about" id="about">
                 <div class="container">
-                    <div class="section-head text-center wide-md">
-                        <h5 class="subtitle">Cyprus Live Updates</h5>
-                        <h2 class="title">COVID-19 <br class="d-sm-none"> at a glance </h2>
-                        <p>A visual guide to the pandemic</p>
-                    </div><!-- .section-head -->
                     <div class="section-content">
-
-                        <!-- daily cases -->
-                        <div class="row g-gs justify-content-between">
-                            <div class="col-lg-2"></div>
-                            <div class="col-lg-8">
-                                <table class="table table-bordered cases_table">
-                                    <thead>
-                                        <th colspan="4" id="today_date" style="color: #f86168; text-align:center"></th>
-                                        <tr>
-                                            <th>New Confirmed</th>
-                                            <th>New Recoveries</th>
-                                            <th>New Deaths</th>
-                                            <th>Active Cases</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td id="new_confirmed"></td>
-                                            <td id="new_recoveries"></td>
-                                            <td id="new_deaths"></td>
-                                            <td id="active_cases"></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div><!-- .col -->
-                            <div class="col-lg-2"></div>
-                        </div><!-- .row -->
-                        <br> <br><br>
-
-                        <!-- confirmed cases timeseries -->
                         <div class="row g-gs justify-content-between">
                             <div class="col-lg-7">
-                                <div style="width: 100%; height: 400px;" id="chartdiv_active_cases"></div>
-                            </div><!-- .col -->
-                            <div class="col-lg-5 col-xl-4">
-                                <div class="text-block" style="margin-top: 20%">
-                                    <h5 class="subtitle">CONFIRMED CASES OVER TIME</h5>
-                                    <p></p>
-                                    <p data-toggle="tooltip" title="mm/DD/yyyy" class="lead" id="first_conf_date"><strong>First Infection:</strong></p>
-                                    <p class="lead" id="total_confirmed"><strong>Total Confirmed Cases: </strong></p>
+                                <div class="text-block">
+                                    <h5 class="subtitle">About the disease</h5>
+                                    <h2 class="title">Coronavirus <br class="d-sm-none">(COVID-19)</h2>
+                                    <p class="lead" align="justify"><strong>COVID-19 is a new illness that can affect your lungs and airways.</strong> It's caused by a virus called coronavirus. It was discovered in December 2019 in Wuhan, Hubei, China. </p>
+                                    <p>Common signs of infection include respiratory symptoms, fever, cough, shortness of breath and breathing difficulties. In more severe cases, infection can cause pneumonia, severe acute respiratory syndrome, kidney failure and even death.</p>
+                                    <p>Standard recommendations to prevent infection spread include regular hand washing, covering mouth and nose when coughing and sneezing, thoroughly cooking meat and eggs. Avoid close contact with anyone showing symptoms of respiratory illness such as coughing and sneezing.</p>
                                 </div><!-- .text-block -->
                             </div><!-- .col -->
-                        </div><!-- .row -->
-
-                        <!-- recovered cases timeseries -->
-                        <div class="row g-gs justify-content-between">
-                            <div class="col-lg-7">
-								<div style="width: 100%; height: 400px;" id="chartdiv_recovered_cases"></div>
-                            </div><!-- .col -->
                             <div class="col-lg-5 col-xl-4">
-                                <div class="text-block" style="margin-top: 20%">
-                                    <h5 class="subtitle">RECOVERED CASES OVER TIME</h5>
-                                    <p></p>
-                                    <p data-toggle="tooltip" title="mm/DD/yyyy" class="lead" id="first_recovered_date"><strong>First Recovery: </strong></p>
-                                    <p class="lead" id="total_recovered_date"><strong>Total Recoveries: </strong></p>
-                                </div><!-- .text-block -->
-                            </div><!-- .col -->
-                        </div><!-- .row -->
-
-                        <!-- death cases timeseries -->
-                        <div class="row g-gs justify-content-between">
-                            <div class="col-lg-7">
-								<div style="width: 100%; height: 400px;" id="chartdiv_death_cases"></div>
-                            </div><!-- .col -->
-                            <div class="col-lg-5 col-xl-4">
-                                <div class="text-block" style="margin-top: 20%">
-                                    <h5 class="subtitle">DEATH CASES OVER TIME</h5>
-                                    <p></p>
-                                    <p data-toggle="tooltip" title="mm/DD/yyyy" class="lead" id="first_death_date"><strong>First Death: </strong></p>
-                                    <p class="lead" id="total_death_date"><strong>Total Deaths: </strong></p>
-                                </div><!-- .text-block -->
-                            </div><!-- .col -->
-                        </div><!-- .row -->
-
-					</div><!-- .container -->
-            </section><!-- .section -->
-            
-            <section class="section section-l bg-light section-protect" id="protect">
-                <div class="container">
-                    <div class="section-head text-center wide-lg">
-                        <h5 class="subtitle">Do’s &amp; Don’ts</h5>
-                        <h2 class="title">Protect yourself</h2>
-                        <p align="justify">The best thing you can do now is plan for how you can adapt your daily routine. Take few steps to protect yourself as Clean your hands often, Avoid close contact, Cover coughs and sneezes, clean daily used surfaces etc. The best way to prevent illness is to avoid being exposed to this virus.</p>
-                    </div><!-- .section-head -->
-                    <div class="section-content">
-                        <div class="row g-gs justify-content-center flex-lg-nowrap">
-                            <div class="col-md-8 col-lg-5 col-xl-6 align-self-end">
-                                <div class="protect-block-gfx">
-                                    <img src="images/gfx/protect.png" alt="">
-                                </div>
-                            </div><!-- .col -->
-                            <div class="col-6 col-mb-5 col-sm-6 col-lg-4 col-xl-3 flex-grow-1 order-lg-first">
-                                <div class="protect-item negative">
-                                    <div class="protect-gfx">
-                                        <img src="images/gfx/donts-a.png" alt="">
+                                <div class="wgs wgs-card mt-sm-2 mt-md-4 mt-lg-0 ml-lg-4 ml-xl-0">
+                                    <div class="wgs-head">
+                                        <h4>What you need to know</h4>
                                     </div>
-                                    <div class="protect-text">
-                                        <h5 class="title">Avoid Close Contact</h5>
-                                    </div>
-                                </div><!-- .protext-item -->
-                                <div class="protect-item negative">
-                                    <div class="protect-gfx">
-                                        <img src="images/gfx/donts-b.png" alt="">
-                                    </div>
-                                    <div class="protect-text">
-                                        <h5 class="title">Don’t Touch Face</h5>
-                                    </div>
-                                </div><!-- .protext-item -->
-                                <div class="protect-item negative">
-                                    <div class="protect-gfx">
-                                        <img src="images/gfx/donts-c.png" alt="">
-                                    </div>
-                                    <div class="protect-text">
-                                        <h5 class="title">Social Distancing</h5>
-                                    </div>
-                                </div><!-- .protext-item -->
-                            </div><!-- .col -->
-                            <div class="col-6 col-mb-5 col-sm-6 col-lg-4 col-xl-3 flex-grow-1 ">
-                                <div class="protect-item positive">
-                                    <div class="protect-gfx">
-                                        <img src="images/gfx/dos-a.png" alt="">
-                                    </div>
-                                    <div class="protect-text">
-                                        <h5 class="title">Wash Your Hands</h5>
-                                    </div>
-                                </div><!-- .protext-item -->
-                                <div class="protect-item positive">
-                                    <div class="protect-gfx">
-                                        <img src="images/gfx/dos-b.png" alt="">
-                                    </div>
-                                    <div class="protect-text">
-                                        <h5 class="title">Drink Much Watar</h5>
-                                    </div>
-                                </div><!-- .protext-item -->
-                                <div class="protect-item positive">
-                                    <div class="protect-gfx">
-                                        <img src="images/gfx/dos-c.png" alt="">
-                                    </div>
-                                    <div class="protect-text">
-                                        <h5 class="title">Use Face Mask</h5>
-                                    </div>
-                                </div><!-- .protext-item -->
+                                    <ul class="wgs-list">
+                                        <li><a class="scrollto" href="about.html#spread">How coronavirus is spread</a></li>
+                                        <li><a class="scrollto" href="symptoms.html">Symptoms of coronavirus</a></li>
+                                        <li><a class="scrollto" href="prevention.html">How to protect yourself</a></li>
+                                        <li><a class="scrollto" href="treatment.html">Treatment for coronavirus</a></li>
+                                        <li><a class="scrollto" href="index.html#faq">Myth-Busters of coronavirus</a></li>
+                                        <li><a class="scrollto" href="index.html#faq">Questions & answers</a></li>
+                                    </ul>
+                                </div><!-- .wgs -->
                             </div><!-- .col -->
                         </div><!-- .row -->
                     </div><!-- .section-content -->
                 </div><!-- .container -->
             </section><!-- .section -->
             
+            <section class="section section-l bg-light section-spread" id="spread">
+                <div class="container">
+                    <div class="section-head text-center wide-md">
+                        <h5 class="subtitle">How coronavirus is spread</h5>
+                        <h2 class="title">Transmission of <br class="d-sm-none"> COVID-19</h2>
+                        <p align="justify">Because it's a new illness, we do not know exactly how coronavirus spreads from person to person. Similar viruses are spread in cough droplets.</p>
+                    </div><!-- .section-head -->
+                    <div class="section-content">
+                        <div class="row g-gs justify-content-center">
+                            <div class="col-sm-10 col-md-8 col-lg-4">
+                                <div class="box">
+                                    <div class="box-gfx">
+                                        <img src="images/gfx/spread-a.png" alt="">
+                                    </div>
+                                    <div class="box-content">
+                                        <h4 class="title">Person-to-person spread as close contact with infected </h4>
+                                        <p align="justify">The coronavirus is thought to spread mainly from person to person. This can happen between people who are in close contact with one another.</p>
+                                    </div>
+                                </div><!-- .box -->
+                            </div><!-- .col -->
+                            <div class="col-sm-10 col-md-8 col-lg-4">
+                                <div class="box">
+                                    <div class="box-gfx">
+                                        <img src="images/gfx/spread-b.png" alt="">
+                                    </div>
+                                    <div class="box-content">
+                                        <h4 class="title">Touching or contact with infected surfaces or objects</h4>
+                                        <p align="justify">A person can get COVID-19 by touching a surface or object that has the virus on it and then touching their own mouth, nose, or possibly their eyes.</p>
+                                    </div>
+                                </div><!-- .box -->
+                            </div><!-- .col -->
+                            <div class="col-sm-10 col-md-8 col-lg-4">
+                                <div class="box">
+                                    <div class="box-gfx">
+                                        <img src="images/gfx/spread-c.png" alt="">
+                                    </div>
+                                    <div class="box-content">
+                                        <h4 class="title">Droplets that from infected person coughs or sneezes</h4>
+                                        <p align="justify">The coronavirus is thought to spread mainly from person to person. This can happen between people who are in close contact with one another.</p>
+                                    </div>
+                                </div><!-- .box -->
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                        <ul class="section-actions">
+                            <li><a href="#faq" class="btn scrollto"><em class="icon ni ni-question"></em><span>Have question about spreading?</span></a></li>
+                        </ul><!-- .section-actions -->
+                    </div><!-- .section-content -->
+                </div><!-- .container -->
+            </section><!-- .section -->
+
+            <section class="section section-l bg-accent-light tc-light section-treatment has-overlay" id="treatment">
+                <div class="overlay shape shape-b"></div><!-- Overlay Shape -->
+                <div class="container">
+                    <div class="section-content">
+                        <div class="row g-gs gy-sm-m justify-content-between align-items-center">
+                            <div class="col-lg-7 col-xl-6">
+                                <div class="text-block">
+                                    <h5 class="subtitle">Be carefull & Stay Safe</h5>
+                                    <h2 class="title">Treatment for coronavirus</h2>
+                                    <p align="justify"> <strong>To date, there is no vaccine and no specific antiviral medicine to prevent or treat COVID-2019. </strong>  However, those affected should receive care to relieve symptoms. People with serious illness should be hospitalized. Most patients recover thanks to supportive care.</p>
+                                    <p align="justify">Antibiotics do not help, as they do not work against viruses. Treatment aims to relieve the symptoms while your body fights the illness. You'll need to stay in isolation, away from other people, until you have recovered.</p>
+                                </div><!-- .text-block -->
+                            </div><!-- .col -->
+                            <div class="col-lg-5">
+                                <div class="box5 bg-accent-dark">
+                                    <h6 class="title">Self Care</h6>
+                                    <p>If you have mild symptoms, stay at home until you’ve recovered. You can relieve your symptoms if you:</p>
+                                    <ul class="list-arrow">
+                                        <li>Rest and sleep</li>
+                                        <li>Keep warm</li>
+                                        <li>Drink plenty of liquids</li>
+                                        <li>Use a room humidifier or take a hot shower to help ease a sore throat and cough</li>
+                                    </ul>
+                                    <h6 class="title">Medical Treatments</h6>
+                                    <p align="justify">If you develop a fever, cough, and have difficulty breathing, promptly seek medical care. Call in advance and tell your health provider of any recent travel or recent contact with travelers.</p>
+                                </div><!-- .box5 -->
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                    </div><!-- .section-content -->
+                </div><!-- .container -->
+            </section><!-- .section -->
+                        
             <section class="section section-l bg-white section-faq" id="faq">
                 <div class="container">
                     <div class="section-head text-center">

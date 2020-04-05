@@ -38,13 +38,13 @@
                         </div><!-- .nk-navbar-toggle -->
                         <nav class="nk-navbar-menu" id="navbar-menu">
                             <ul class="nk-menu">
-                                <li class="nk-menu-item"><a class="scrollto nav-link nk-menu-link" href="#home">Home</a></li>
-                                <li class="nk-menu-item"><a class="scrollto nav-link nk-menu-link" href="#cyprus-data">Cyprus Data</a></li>
+                                <li class="nk-menu-item"><a class="scrollto nav-link nk-menu-link" href="index.html">Home</a></li>
+                                <li class="nk-menu-item"><a class="scrollto nav-link nk-menu-link" href="index.html">Cyprus Data</a></li>
                                 <li class="nk-menu-item"><a class="scrollto nav-link nk-menu-link" href="about.html">About Covid-19</a></li>
                                 <li class="nk-menu-item"><a class="scrollto nav-link nk-menu-link" href="symptoms.html">Symptoms</a></li>
                                 <li class="nk-menu-item"><a class="scrollto nav-link nk-menu-link" href="prevention.html">Prevention</a></li>
                                 <li class="nk-menu-item"><a class="scrollto nav-link nk-menu-link" href="treatment.html">Treatment</a></li>
-                                <li class="nk-menu-item"><a class="scrollto nav-link nk-menu-link" href="#faq">FAQ</a></li>
+                                <li class="nk-menu-item"><a class="scrollto nav-link nk-menu-link" href="index.html#faq">FAQ</a></li>
                             </ul>
                             <ul class="nk-menu-btns">
                                 <li class="nk-menu-item"><a href="index.html#protect" class="btn btn-sm scrollto nav-link">Do &amp; Don’t</a></li>
@@ -53,221 +53,75 @@
                     </div><!-- .nk-navbar-wrap -->
                 </div><!-- .container -->
             </div><!-- .nk-navbar -->
-            <div class="nk-banner">
-                <div class="container">
-                    <div class="row g-gs align-items-center justify-content-between">
-                        <div class="col-lg-5 order-lg-last">
-                            <div class="nk-banner-image">
-                                <img src="images/gfx/header-a.png" alt="">
-                            </div>
-                        </div><!-- .col -->
-                        <div class="col-lg-6">
-                            <div class="nk-banner-block">
-                                <div class="content">
-                                    <h1 class="heading">
-                                        <span>CORONA</span>
-                                        <span class="heading-sm">
-                                            <span class="sup">COVID-19</span>
-                                            <span class="sub">VIRUS</span>
-                                        </span>
-                                    </h1>
-                                    <p align="justify">The Coronavirus (COVID-19) was first reported in Wuhan, Hubei, 
-                                        China in December 2019,  the outbreak was later recognized as a 
-                                        pandemic by the World Health Organization (WHO) on 11 March 2020.</p>
-    
-                                    <ul class="nk-banner-btns">
-                                        <li><a href="#protect" class="btn scrollto"><span>How to Protect</span><em class="icon ni ni-shield-half"></em></a></li>
-                                        <li><a href="#about" class="btn btn-transparent scrollto"><span>About COVID-19</span><em class="icon ni ni-arrow-right"></em></a></li>
-                                    </ul>
-                                    <div class="status">
-                                        <div class="row g-gs">
-                                            <div class="col-sm-4 col-6">
-                                                <div class="status-item">
-                                                    <h6 class="title">Cyprus Confirmed</h6>
-                                                    <div class="h3 count" id="confirmed_cases_overview"></div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4 col-6">
-                                                <div class="status-item">
-                                                    <h6 class="title">Cyprus Deaths</h6>
-                                                    <div class="h3 count" id="death_cases_overview"></div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4 col-6">
-                                                <div class="status-item">
-                                                    <h6 class="title">Cyprus Recovered</h6>
-                                                    <div class="h3 count" id="recovered_cases_overview"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="status-note">*  Last updated (based on JHU CCSE dataset) : </div>
-                                    </div><!-- .status -->
-                                </div><!-- .content -->
-                            </div><!-- .nk-banner-block -->
-                        </div><!-- .col -->
-                    </div><!-- .row -->
-                </div><!-- .container -->
+
+            <div class="nk-banner" style="min-height: 0px;">
             </div><!-- .nk-banner -->
         </header><!-- .nk-header -->
 
         <main class="nk-pages">
 
-            <section class="section section-l bg-light section-spread" id="cyprus-data">
-                <div class="container">
-                    <div class="section-head text-center wide-md">
-                        <h5 class="subtitle">Cyprus Live Updates</h5>
-                        <h2 class="title">COVID-19 <br class="d-sm-none"> at a glance </h2>
-                        <p>A visual guide to the pandemic</p>
-                    </div><!-- .section-head -->
-                    <div class="section-content">
-
-                        <!-- daily cases -->
-                        <div class="row g-gs justify-content-between">
-                            <div class="col-lg-2"></div>
-                            <div class="col-lg-8">
-                                <table class="table table-bordered cases_table">
-                                    <thead>
-                                        <th colspan="4" id="today_date" style="color: #f86168; text-align:center"></th>
-                                        <tr>
-                                            <th>New Confirmed</th>
-                                            <th>New Recoveries</th>
-                                            <th>New Deaths</th>
-                                            <th>Active Cases</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td id="new_confirmed"></td>
-                                            <td id="new_recoveries"></td>
-                                            <td id="new_deaths"></td>
-                                            <td id="active_cases"></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div><!-- .col -->
-                            <div class="col-lg-2"></div>
-                        </div><!-- .row -->
-                        <br> <br><br>
-
-                        <!-- confirmed cases timeseries -->
-                        <div class="row g-gs justify-content-between">
-                            <div class="col-lg-7">
-                                <div style="width: 100%; height: 400px;" id="chartdiv_active_cases"></div>
-                            </div><!-- .col -->
-                            <div class="col-lg-5 col-xl-4">
-                                <div class="text-block" style="margin-top: 20%">
-                                    <h5 class="subtitle">CONFIRMED CASES OVER TIME</h5>
-                                    <p></p>
-                                    <p data-toggle="tooltip" title="mm/DD/yyyy" class="lead" id="first_conf_date"><strong>First Infection:</strong></p>
-                                    <p class="lead" id="total_confirmed"><strong>Total Confirmed Cases: </strong></p>
-                                </div><!-- .text-block -->
-                            </div><!-- .col -->
-                        </div><!-- .row -->
-
-                        <!-- recovered cases timeseries -->
-                        <div class="row g-gs justify-content-between">
-                            <div class="col-lg-7">
-								<div style="width: 100%; height: 400px;" id="chartdiv_recovered_cases"></div>
-                            </div><!-- .col -->
-                            <div class="col-lg-5 col-xl-4">
-                                <div class="text-block" style="margin-top: 20%">
-                                    <h5 class="subtitle">RECOVERED CASES OVER TIME</h5>
-                                    <p></p>
-                                    <p data-toggle="tooltip" title="mm/DD/yyyy" class="lead" id="first_recovered_date"><strong>First Recovery: </strong></p>
-                                    <p class="lead" id="total_recovered_date"><strong>Total Recoveries: </strong></p>
-                                </div><!-- .text-block -->
-                            </div><!-- .col -->
-                        </div><!-- .row -->
-
-                        <!-- death cases timeseries -->
-                        <div class="row g-gs justify-content-between">
-                            <div class="col-lg-7">
-								<div style="width: 100%; height: 400px;" id="chartdiv_death_cases"></div>
-                            </div><!-- .col -->
-                            <div class="col-lg-5 col-xl-4">
-                                <div class="text-block" style="margin-top: 20%">
-                                    <h5 class="subtitle">DEATH CASES OVER TIME</h5>
-                                    <p></p>
-                                    <p data-toggle="tooltip" title="mm/DD/yyyy" class="lead" id="first_death_date"><strong>First Death: </strong></p>
-                                    <p class="lead" id="total_death_date"><strong>Total Deaths: </strong></p>
-                                </div><!-- .text-block -->
-                            </div><!-- .col -->
-                        </div><!-- .row -->
-
-					</div><!-- .container -->
-            </section><!-- .section -->
-            
-            <section class="section section-l bg-light section-protect" id="protect">
+            <section class="section section-l bg-white section-symptom" id="symptoms">
                 <div class="container">
                     <div class="section-head text-center wide-lg">
-                        <h5 class="subtitle">Do’s &amp; Don’ts</h5>
-                        <h2 class="title">Protect yourself</h2>
-                        <p align="justify">The best thing you can do now is plan for how you can adapt your daily routine. Take few steps to protect yourself as Clean your hands often, Avoid close contact, Cover coughs and sneezes, clean daily used surfaces etc. The best way to prevent illness is to avoid being exposed to this virus.</p>
+                        <h5 class="subtitle">What are the symptoms of COVID-19?</h5>
+                        <h2 class="title">Symptoms of Coronavirus</h2>
+                        <p align="justify">The most common symptoms of COVID-19 are fever, tiredness, and dry cough. Some patients may have aches and pains, nasal congestion, runny nose, sore throat or diarrhea. These symptoms are usually mild and begin gradually. Also the symptoms may appear 2-14 days after exposure.</p>
                     </div><!-- .section-head -->
                     <div class="section-content">
-                        <div class="row g-gs justify-content-center flex-lg-nowrap">
-                            <div class="col-md-8 col-lg-5 col-xl-6 align-self-end">
-                                <div class="protect-block-gfx">
-                                    <img src="images/gfx/protect.png" alt="">
-                                </div>
+                        <div class="row g-gs justify-content-center">
+                            <div class="col-sm-10 col-md-8 col-lg-4">
+                                <div class="box2">
+                                    <div class="box2-gfx">
+                                        <img src="images/gfx/symptom-a.png" alt="">
+                                    </div>
+                                    <div class="box2-content">
+                                        <h5 class="title">Fever</h5>
+                                        <p align="justify"><strong>High Fever</strong> – this means you feel hot to touch on your chest or back (you do not need to measure your temperature). It is a common sign and also may appear in 2-10 days if you affected.</p>
+                                    </div>
+                                </div><!-- .box2 -->
                             </div><!-- .col -->
-                            <div class="col-6 col-mb-5 col-sm-6 col-lg-4 col-xl-3 flex-grow-1 order-lg-first">
-                                <div class="protect-item negative">
-                                    <div class="protect-gfx">
-                                        <img src="images/gfx/donts-a.png" alt="">
+                            <div class="col-sm-10 col-md-8 col-lg-4">
+                                <div class="box2">
+                                    <div class="box2-gfx">
+                                        <img src="images/gfx/symptom-b.png" alt="">
                                     </div>
-                                    <div class="protect-text">
-                                        <h5 class="title">Avoid Close Contact</h5>
+                                    <div class="box2-content">
+                                        <h5 class="title">Cough</h5>
+                                        <p align="justify"><strong>Continuous cough</strong> – this means coughing a lot for more than an hour, or 3 or more coughing episodes in 24 hours (if you usually have a cough, it may be worse than usual).</p>
                                     </div>
-                                </div><!-- .protext-item -->
-                                <div class="protect-item negative">
-                                    <div class="protect-gfx">
-                                        <img src="images/gfx/donts-b.png" alt="">
-                                    </div>
-                                    <div class="protect-text">
-                                        <h5 class="title">Don’t Touch Face</h5>
-                                    </div>
-                                </div><!-- .protext-item -->
-                                <div class="protect-item negative">
-                                    <div class="protect-gfx">
-                                        <img src="images/gfx/donts-c.png" alt="">
-                                    </div>
-                                    <div class="protect-text">
-                                        <h5 class="title">Social Distancing</h5>
-                                    </div>
-                                </div><!-- .protext-item -->
+                                </div><!-- .box2 -->
                             </div><!-- .col -->
-                            <div class="col-6 col-mb-5 col-sm-6 col-lg-4 col-xl-3 flex-grow-1 ">
-                                <div class="protect-item positive">
-                                    <div class="protect-gfx">
-                                        <img src="images/gfx/dos-a.png" alt="">
+                            <div class="col-sm-10 col-md-8 col-lg-4">
+                                <div class="box2">
+                                    <div class="box2-gfx">
+                                        <img src="images/gfx/symptom-c.png" alt="">
                                     </div>
-                                    <div class="protect-text">
-                                        <h5 class="title">Wash Your Hands</h5>
+                                    <div class="box2-content">
+                                        <h5 class="title">Shortness of breath</h5>
+                                        <p align="justify"><strong>Difficulty breathing</strong> – Around 1 out of every 6 people who gets COVID-19 becomes seriously ill and develops difficulty breathing or shortness of breath.</p>
                                     </div>
-                                </div><!-- .protext-item -->
-                                <div class="protect-item positive">
-                                    <div class="protect-gfx">
-                                        <img src="images/gfx/dos-b.png" alt="">
-                                    </div>
-                                    <div class="protect-text">
-                                        <h5 class="title">Drink Much Watar</h5>
-                                    </div>
-                                </div><!-- .protext-item -->
-                                <div class="protect-item positive">
-                                    <div class="protect-gfx">
-                                        <img src="images/gfx/dos-c.png" alt="">
-                                    </div>
-                                    <div class="protect-text">
-                                        <h5 class="title">Use Face Mask</h5>
-                                    </div>
-                                </div><!-- .protext-item -->
+                                </div><!-- .box2 -->
                             </div><!-- .col -->
                         </div><!-- .row -->
+                        <div class="section-cta">
+                            <div class="row g-gs justify-content-center">
+                                <div class="col-sm-10 col-md-8 col-lg-7 col-xl-8">
+                                    <div class="notes">
+                                        <em class="icon ni ni-alert-fill-c"></em>
+                                        <p align="justify"><strong>Stay at home and call your doctor:</strong>  If you think you have been exposed to COVID-19 and develop a fever and any symptoms, such as cough or difficulty breathing, call your healthcare provider as soon as possible for medical advice.</p>
+                                    </div>
+                                </div><!-- .col -->
+                                <div class="col-sm-10 col-md-8 col-lg-5 col-xl-4">
+                                    <div class="d-flex justify-content-lg-end ml-sm-5 ml-4 pl-3 ml-lg-0 pl-lg-0">
+                                        <a href="#faq" class="btn scrollto"><em class="icon ni ni-question"></em><span>Have question? Find answer.</span></a>
+                                    </div>
+                                </div><!-- .col -->
+                            </div><!-- .row -->
+                        </div>
                     </div><!-- .section-content -->
                 </div><!-- .container -->
             </section><!-- .section -->
-            
+                        
             <section class="section section-l bg-white section-faq" id="faq">
                 <div class="container">
                     <div class="section-head text-center">
