@@ -11,7 +11,7 @@ Standard recommendations to prevent infection spread include regular hand washin
 ## Visual Guide Overview
 The Cyprus covid19 website is a visual guide to the coronavirus pandemic. This guide tracks the spread of the novel coronavirus, within Cyprus.
 
-![overview image](https://cypruscovid19.com/images/overview-pic.png)
+<p align="center"><img src="https://cypruscovid19.com/images/overview-pic.png" width="70%" height="70%"/></p>
 
 
 ### Data visualization includes:
